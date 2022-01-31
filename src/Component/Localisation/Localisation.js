@@ -61,7 +61,7 @@ class Localisation extends React.Component {
             this.state.listeEtablissement.map((listeEtablissements) => {
               console.log(listeEtablissements);
               return (
-                <div className="row">
+                
                   <div className="col-12 col-md-6">
                     <ListePays
                       addresses={listeEtablissements.properties.addresses}
@@ -70,8 +70,9 @@ class Localisation extends React.Component {
                       nom={listeEtablissements.properties.nom}
                       pivotLocal={listeEtablissements.properties.pivotLocal}
                       telephone={listeEtablissements.properties.telephone}
+                      url={listeEtablissements.properties.url}
                     />
-                  </div>
+                 
                 </div>
               );
             })}
